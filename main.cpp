@@ -34,6 +34,10 @@ public:
 
       ClearBackground(BLACK);
 
+      if (IsKeyPressed(KEY_R)) {
+        reset();
+      }
+
       DrawText("Bubble Sort", 190, 150, 20, LIGHTGRAY);
 
       drawArray(_array);
@@ -76,6 +80,20 @@ public:
       _j = 0;
       _i++;
       _noSwaps = true;
+    }
+  }
+
+  void reset() {
+    _i = 0;
+    _j = 0;
+    _sorted = false;
+    _noSwaps = true;
+    _compared.clear();
+
+    std::mt19937 rng(std::random_device{}());
+    std::uniform_real_distribution<float> dist(0.0f, 1.0f);
+    for (size_t i = 0; i < _maxSize; i++) {
+      _array[i] = dist(rng);
     }
   }
 
