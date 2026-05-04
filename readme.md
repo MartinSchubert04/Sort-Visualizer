@@ -12,6 +12,7 @@ This is no "real time" sorting since the speed is bounded to the frames per seco
 ![Bubble sort](assets/bubble-demo.gif)
 
 ### Merge sort O(n log n)
-![Merge sort](assets/merge-demo.gif)
+![Merge sort](assets/mergesort-demo.gif)
+
 ### Quick sort O(n log n)
-![Quick sort](assets/quick-demo.gif)
+![Quick sort](assets/quicksort-demo.gif)
